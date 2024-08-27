@@ -56,7 +56,7 @@ export default function CartContextProvider({ children }) {
 
     async function checkOutSession(shippingAddress) {
         try {
-            const { data } = await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartItems?.data._id}?url=https://freshcart-gamma-one.vercel.app/`, { shippingAddress }, { headers });
+            const { data } = await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartItems?.data._id}?url=https://freshcart-ruby.vercel.app//`, { shippingAddress }, { headers });
             return data;
         } catch (error) {
             console.log(data.message);
